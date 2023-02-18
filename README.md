@@ -1,4 +1,4 @@
-# PicoGPT
+# PicoGPT, orgignal code by [jaymody](https://github.com/jaymody/picoGPT)
 
 You've seen [openai/gpt-2](https://github.com/openai/gpt-2).
 
@@ -13,9 +13,9 @@ But have you seen [picoGPT](https://github.com/jaymody/picoGPT)??!?
 picoGPT features:
 * Fast? ❌ Nah, picoGPT is megaSLOW 🐌
 * Training code? ❌ Error, 4️⃣0️⃣4️⃣ not found
-* Batch inference? ❌ picoGPT is civilized, single file line, one at a time only
-* top-p sampling? ❌ top-k? ❌ temperature? ❌ categorical sampling?! ❌ greedy? ✅
-* Readable? `gpt2.py` ✅ `gpt2_pico.py` ❌
+* Batch inference? Sort of ✅
+* top-p sampling? Sort of ✅
+* Readable? `gpt2.py` ✅
 * Smol??? ✅✅✅✅✅✅ YESS!!! TEENIE TINY in fact 🤏
 
 A quick breakdown of each of the files:
@@ -33,23 +33,14 @@ Tested on `Python 3.9.10`.
 
 #### Usage
 ```bash
-python gpt2.py "Alan Turing theorized that computers would one day become"
+python gpt2.py
+> "Alan Turing theorized that computers would one day become
 ```
 
 Which generates
 
 ```
- the most powerful machines on the planet.
-
-The computer is a machine that can perform complex calculations, and it can perform these calculations in a way that is very similar to the human brain.
+so intelligent that they would be able to think for themselves, and he predicted that computers would one day be able to simulate human thought.
 ```
 
-You can also control the number of tokens to generate, the model size (one of `["124M", "355M", "774M", "1558M"]`), and the directory to save the models:
-
-```bash
-python gpt2.py \
-    "Alan Turing theorized that computers would one day become" \
-    --n_tokens_to_generate 40 \
-    --model_size "124M" \
-    --models_dir "models"
-```
+You can also control the model size (one of `["124M", "355M", "774M", "1558M"]`).
